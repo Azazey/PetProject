@@ -11,7 +11,7 @@ public class Gun : MonoBehaviour
     [SerializeField] private float _bulletSpeed = 60f;
     [SerializeField] private float _shotPeriod = 0.2f;
     [SerializeField] private ParticleSystem _smoke;
-    
+
     private float _timer;
 
     private void Update()
@@ -49,8 +49,6 @@ public class Gun : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public virtual void AddBullets(int bulletCount)
-    {
-        
+    public virtual void AddBullets(int bulletCount){
     }
 }

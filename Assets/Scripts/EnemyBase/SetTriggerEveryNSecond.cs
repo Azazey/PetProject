@@ -7,7 +7,7 @@ public class SetTriggerEveryNSecond : MonoBehaviour
     [SerializeField] private float _attackPeriod = 7f;
     [SerializeField] private Animator _animator;
     [SerializeField] private string _triggerName = "Attack";
-    
+
     private float _timer;
 
     private void Update()

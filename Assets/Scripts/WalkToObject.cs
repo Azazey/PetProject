@@ -17,11 +17,10 @@ public class WalkToObject : MonoBehaviour
     [SerializeField] private float _stopTime;
     [SerializeField] private Direction _currentDirection;
     [SerializeField] private Transform _rayStart;
+    [SerializeField] private UnityEvent EventOnLeftTarget;
+    [SerializeField] private UnityEvent EventOnRightTarget;
 
     private bool _isStopped;
-
-    public UnityEvent EventOnLeftTarget;
-    public UnityEvent EventOnRightTarget;
 
     private void Awake()
     {
@@ -35,6 +34,7 @@ public class WalkToObject : MonoBehaviour
         {
             return;
         }
+
         if (_currentDirection == Direction.Left)
         {
             transform.position -= new Vector3(Time.deltaTime * _speed, 0f, 0f);

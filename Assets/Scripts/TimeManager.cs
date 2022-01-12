@@ -5,14 +5,14 @@ using UnityEngine;
 public class TimeManager : MonoBehaviour
 {
     [SerializeField] private float _timeScale = 0.3f;
+
     private float _startFixedDeltaTime;
 
     private void Awake()
     {
         _startFixedDeltaTime = Time.fixedDeltaTime;
-        
     }
-    
+
     private void Update()
     {
         SlowMotionTime();
@@ -29,7 +29,7 @@ public class TimeManager : MonoBehaviour
             Time.timeScale = 1f;
         }
 
-        Time.fixedDeltaTime = _startFixedDeltaTime * Time.timeScale; 
+        Time.fixedDeltaTime = _startFixedDeltaTime * Time.timeScale;
     }
 
     private void OnDestroy()

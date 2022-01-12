@@ -8,7 +8,7 @@ public class DamageScreen : MonoBehaviour
 {
     [SerializeField] private Image _damageScreen;
 
-    public void StartEffect()
+    private void StartEffect()
     {
         StartCoroutine(ShowDamageScreen());
     }

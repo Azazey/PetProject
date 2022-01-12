@@ -9,12 +9,12 @@ public class Ppsh : Gun
     [SerializeField] private int _numberOfBullet;
     [SerializeField] private Text _bulletText;
     [SerializeField] private PlayerArmory _playerArmory;
-
-
+    
     private void Start()
     {
         UpdateText();
     }
+    
     public override void Shot()
     {
         base.Shot();

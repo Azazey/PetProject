@@ -8,10 +8,9 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private int _health = 2;
     [SerializeField] private AudioSource _deathSound;
     [SerializeField] private GameObject _effectPrefab;
+    [SerializeField] private UnityEvent Damaged;
 
     private const int _soundLiveTime = 3;
-
-    public UnityEvent Damaged;
 
     public int Health => _health;
 

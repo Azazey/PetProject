@@ -12,7 +12,8 @@ public class RotateToTargetEuler : MonoBehaviour
 
     private void Update()
     {
-        transform.localRotation = Quaternion.Lerp(transform.localRotation, Quaternion.Euler(_targetEuler), Time.deltaTime * _rotationSpeed);
+        transform.localRotation = Quaternion.Lerp(transform.localRotation, Quaternion.Euler(_targetEuler),
+            Time.deltaTime * _rotationSpeed);
     }
 
     public void RotateLeft()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RotateToPlayer : MonoBehaviour
 {
-    [SerializeField] private Vector3 _leftEuler = new Vector3(0,-180,0);
+    [SerializeField] private Vector3 _leftEuler = new Vector3(0, -180, 0);
     [SerializeField] private Vector3 _rightEuler = Vector3.zero;
     [SerializeField] private float _rotationSpeed = 5f;
 
@@ -26,6 +26,8 @@ public class RotateToPlayer : MonoBehaviour
         {
             _targetEuler = _leftEuler;
         }
-        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(_targetEuler), Time.deltaTime * _rotationSpeed);
+
+        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(_targetEuler),
+            Time.deltaTime * _rotationSpeed);
     }
 }

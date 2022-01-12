@@ -7,7 +7,7 @@ public class LootBullet : MonoBehaviour
 {
     [SerializeField] private int _gunIndex;
     [SerializeField] private int _giveNumberOfBullets = 30;
-    
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.attachedRigidbody?.GetComponent<PlayerArmory>())

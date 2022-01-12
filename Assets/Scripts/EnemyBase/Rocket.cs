@@ -6,9 +6,9 @@ public class Rocket : MonoBehaviour
 {
     [SerializeField] private float _speed;
     [SerializeField] private float _rotationSpeed;
-    
+
     private Transform _playerTransform;
-    
+
     private void Start()
     {
         _playerTransform = FindObjectOfType<PlayerMovement>().transform;

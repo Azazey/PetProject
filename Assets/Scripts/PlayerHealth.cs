@@ -11,11 +11,10 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private int _maxHealth = 5;
     [SerializeField] private AudioSource _iGotHeal;
     [SerializeField] private HealthUi _healthUi;
+    [SerializeField] private UnityEvent IAmHit;
 
     private bool _invincible = false;
     private bool _godMode = false;
-
-    public UnityEvent IAmHit;
 
     private void Update()
     {

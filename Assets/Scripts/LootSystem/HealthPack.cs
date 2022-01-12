@@ -6,7 +6,7 @@ using UnityEngine;
 public class HealthPack : MonoBehaviour
 {
     [SerializeField] private int _addHealthValue = 1;
-    
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.attachedRigidbody?.GetComponent<PlayerHealth>())

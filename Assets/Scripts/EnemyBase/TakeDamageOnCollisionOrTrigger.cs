@@ -36,10 +36,10 @@ public class TakeDamageOnCollisionOrTrigger : MonoBehaviour
         {
             _enemyHealth.TakeDamage(_damageValue);
         }
+
         if (_dieOnAnyCollision && !collider.isTrigger)
         {
             _enemyHealth.TakeDamage(_instaDeathValue);
         }
     }
-
 }
